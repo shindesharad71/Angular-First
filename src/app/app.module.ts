@@ -3,14 +3,10 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
-import { SuccessComponent } from './SuccessText/success.component';
-import { WarningComponent } from './WarningText/Warning.component';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    SuccessComponent,
-    WarningComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
