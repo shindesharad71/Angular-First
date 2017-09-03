@@ -1,3 +1,9 @@
-<p>
-  recipe-item works!
-</p>
+<a href="#" class="list-group-item clearfix">
+  <div class="media">
+    <img class="d-flex align-self-center mr-3" style="max-height: 50px;" [src]="recipeEl.imagePath" [alt]="recipeEl.name">
+    <div class="media-body">
+      <h5 class="mt-0">{{ recipeEl.name }}</h5>
+      <p>{{ recipeEl.description }}</p>
+    </div>
+  </div>
+</a>
