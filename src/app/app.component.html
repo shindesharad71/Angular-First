@@ -1,10 +1,9 @@
-<app-nav></app-nav>
-  <h1 class="text-center">Hello Angular</h1>
+<app-nav (featureSelected)="onNavigate($event)"></app-nav>
 <div class="container">
   <div class="row">
     <div class="col-md-12">
-      <app-recipe></app-recipe>
-      <app-shopping></app-shopping>
+      <app-recipe *ngIf="loadedFeature === 'recipe'"></app-recipe>
+      <app-shopping *ngIf="loadedFeature !== 'recipe'"></app-shopping>
     </div>
   </div>
 </div>
