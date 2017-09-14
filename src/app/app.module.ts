@@ -17,6 +17,8 @@ import { RecipeEditComponent } from './recipe/recipe-edit/recipe-edit.component'
 import { RecipeService } from './recipe/recipe.service';
 import { HttpModule } from '@angular/http';
 import { DataStorageService } from './shared/data-storage.service';
+import { SignupComponent } from './auth/signup/signup.component';
+import { SigninComponent } from './auth/signin/signin.component';
 
 
 @NgModule({
@@ -30,7 +32,9 @@ import { DataStorageService } from './shared/data-storage.service';
     RecipeItemComponent,
     ShoppingEditComponent,
     RecipeStartComponent,
-    RecipeEditComponent
+    RecipeEditComponent,
+    SignupComponent,
+    SigninComponent
   ],
   imports: [
     BrowserModule,
