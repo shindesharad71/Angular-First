@@ -1,7 +1,9 @@
 <div class="text-center">
     <h1>Welcome To Recipe Book</h1>
     <img class="text-center" src="https://angular.io/assets/images/logos/angular/angular.svg" height="250px" alt="Angular_logo"><br>
-    <h4>An <strong>Angular 4</strong> Project To Understand Angular Concepts and Features.</h4>
-    <button type="button" routerLink="/signup" class="btn btn-primary btn-lg" style="cursor: pointer">Register</button>
-    <button type="button" routerLink="/signin" class="btn btn-secondary btn-lg" style="cursor: pointer">Login</button>
+    <h4>An <strong>Angular 4</strong> Project To Understand Angular Concepts and Features.</h4><br>
+    <ng-template [ngIf]="!authService.isAuthenticated()">
+      <button type="button" routerLink="/signup" class="btn btn-primary btn-lg" style="cursor: pointer">Register</button>
+      <button type="button" routerLink="/signin" class="btn btn-secondary btn-lg" style="cursor: pointer">Login</button>
+    </ng-template>
 </div>
